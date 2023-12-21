@@ -8,17 +8,135 @@ const contracts = {
           address: "0x751e87af85b97054b30aD822291696482625e947",
           abi: [
             {
+              inputs: [],
+              stateMutability: "nonpayable",
+              type: "constructor",
+            },
+            {
+              anonymous: false,
+              inputs: [
+                {
+                  indexed: true,
+                  internalType: "address",
+                  name: "owner",
+                  type: "address",
+                },
+                {
+                  indexed: true,
+                  internalType: "address",
+                  name: "spender",
+                  type: "address",
+                },
+                {
+                  indexed: false,
+                  internalType: "uint256",
+                  name: "value",
+                  type: "uint256",
+                },
+              ],
+              name: "Approval",
+              type: "event",
+            },
+            {
+              anonymous: false,
+              inputs: [
+                {
+                  indexed: true,
+                  internalType: "address",
+                  name: "from",
+                  type: "address",
+                },
+                {
+                  indexed: true,
+                  internalType: "address",
+                  name: "to",
+                  type: "address",
+                },
+                {
+                  indexed: false,
+                  internalType: "uint256",
+                  name: "value",
+                  type: "uint256",
+                },
+              ],
+              name: "Transfer",
+              type: "event",
+            },
+            {
               inputs: [
                 {
                   internalType: "address",
-                  name: "_primaryAdmin",
+                  name: "owner",
                   type: "address",
                 },
                 {
                   internalType: "address",
-                  name: "_tokenAddress",
+                  name: "spender",
                   type: "address",
                 },
+              ],
+              name: "allowance",
+              outputs: [
+                {
+                  internalType: "uint256",
+                  name: "",
+                  type: "uint256",
+                },
+              ],
+              stateMutability: "view",
+              type: "function",
+            },
+            {
+              inputs: [
+                {
+                  internalType: "address",
+                  name: "spender",
+                  type: "address",
+                },
+                {
+                  internalType: "uint256",
+                  name: "amount",
+                  type: "uint256",
+                },
+              ],
+              name: "approve",
+              outputs: [
+                {
+                  internalType: "bool",
+                  name: "",
+                  type: "bool",
+                },
+              ],
+              stateMutability: "nonpayable",
+              type: "function",
+            },
+            {
+              inputs: [
+                {
+                  internalType: "address",
+                  name: "account",
+                  type: "address",
+                },
+              ],
+              name: "balanceOf",
+              outputs: [
+                {
+                  internalType: "uint256",
+                  name: "",
+                  type: "uint256",
+                },
+              ],
+              stateMutability: "view",
+              type: "function",
+            },
+            {
+              inputs: [
+                {
+                  internalType: "address",
+                  name: "from",
+                  type: "address",
+                },
+
               ],
               stateMutability: "nonpayable",
               type: "constructor",
@@ -98,6 +216,11 @@ const contracts = {
             },
             {
               inputs: [],
+              name: "InvalidNewAdminAddress",
+              type: "error",
+            },
+            {
+              inputs: [],
               name: "LengthsMismatch",
               type: "error",
             },
@@ -120,6 +243,11 @@ const contracts = {
             {
               inputs: [],
               name: "NoValueSent",
+              type: "error",
+            },
+            {
+              inputs: [],
+              name: "NotAuthorized",
               type: "error",
             },
             {
@@ -222,6 +350,19 @@ const contracts = {
                 },
               ],
               name: "FundsReceived",
+              type: "event",
+            },
+            {
+              anonymous: false,
+              inputs: [
+                {
+                  indexed: true,
+                  internalType: "address",
+                  name: "newAdmin",
+                  type: "address",
+                },
+              ],
+              name: "PrimaryAdminTransferred",
               type: "event",
             },
             {
@@ -777,6 +918,19 @@ const contracts = {
                 },
               ],
               stateMutability: "view",
+              type: "function",
+            },
+            {
+              inputs: [
+                {
+                  internalType: "address",
+                  name: "newPrimaryAdmin",
+                  type: "address",
+                },
+              ],
+              name: "transferPrimaryAdmin",
+              outputs: [],
+              stateMutability: "nonpayable",
               type: "function",
             },
             {
