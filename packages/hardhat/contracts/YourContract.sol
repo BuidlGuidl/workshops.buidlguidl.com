@@ -272,6 +272,9 @@ contract YourContract is AccessControl, ReentrancyGuard {
     if (creatorflowLast < cappedLast) {
       creatorflowLast = cappedLast;
     }
+    
+    creatorFlow.last = creatorflowLast + (((timestamp - creatorflowLast) * _amount) / totalAmountCanWithdraw);
+
     if (!isERC20) {
       uint256 contractFunds = address(this).balance;
       if (contractFunds < _amount) {
@@ -288,8 +291,6 @@ contract YourContract is AccessControl, ReentrancyGuard {
 
       IERC20(tokenAddress).safeTransfer(msg.sender, _amount);
     }
-
-    creatorFlow.last = creatorflowLast + (((timestamp - creatorflowLast) * _amount) / totalAmountCanWithdraw);
 
     emit Withdrawn(msg.sender, _amount, _reason);
   }
