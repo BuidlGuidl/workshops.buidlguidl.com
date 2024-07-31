@@ -12,7 +12,7 @@ const Contributions = ({ creatorPage }: { creatorPage: boolean }) => {
 
   const withdraw = useScaffoldEventHistory({
     contractName: "YourContract",
-    eventName: "Withdraw",
+    eventName: "Withdrawn",
     fromBlock: BigInt(Number(process.env.NEXT_PUBLIC_DEPLOY_BLOCK) || 0),
     blockData: true,
   });
@@ -24,7 +24,7 @@ const Contributions = ({ creatorPage }: { creatorPage: boolean }) => {
 
   useScaffoldEventSubscriber({
     contractName: "YourContract",
-    eventName: "Withdraw",
+    eventName: "Withdrawn",
     listener: logs => {
       logs.map(log => {
         const creator = log.args[0];
