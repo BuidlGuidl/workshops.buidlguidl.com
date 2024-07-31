@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Image from "next/image";
+// import Image from "next/image";
 import { TokenBalance } from "../TokenBalance";
 import { AdminModal } from "./AdminModal";
 import { HackersInfoDisplay } from "./HackersInfoDisplay";
@@ -94,7 +94,7 @@ const StreamData = ({ creatorPage }: { creatorPage: boolean }) => {
         <div className="flex flex-col">
           <div className="pb-2 pt-1 flex justify-between">
             <h1 className={`font-bold font-typo-round md:text-xl px-4 ${!isAdmin ? "w-full" : ""}`}>
-              {creatorPage ? "Your Stream" : "Hacker Streams"}
+              {creatorPage ? "Your Stream" : "Streams"}
             </h1>
             {isAdmin && (
               <div>
@@ -130,7 +130,7 @@ const StreamData = ({ creatorPage }: { creatorPage: boolean }) => {
             {!isLoadingCreators &&
               !isSettingCreatorsData &&
               creators.length === 0 &&
-              Object.keys(creatorsData).length === 0 && <div className="text-center py-6">No Hacker Streams</div>}
+              Object.keys(creatorsData).length === 0 && <div className="text-center py-6">No Streams</div>}
             {!isLoadingCreators &&
               Object.entries(creatorsData).map(([creatorAddress, creatorData]) => (
                 <HackersInfoDisplay key={creatorAddress} creatorData={creatorData} creatorAddress={creatorAddress} />
@@ -160,7 +160,7 @@ const StreamData = ({ creatorPage }: { creatorPage: boolean }) => {
             Contract Data
           </h1>
           <div className="relative w-10 h-10">
-            <Image alt="OP Logo" className="cursor-pointer" fill src="/OPLogo.png" />
+            {/* <Image alt="OP Logo" className="cursor-pointer" fill src="/OPLogo.png" /> */}
           </div>
         </div>
         <div className="px-4 pt-4">
