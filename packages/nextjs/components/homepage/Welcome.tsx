@@ -7,7 +7,7 @@ const Welcome = () => {
       <p>
         We&apos;re funding BuidlGuidl members for providing high-impact SpeedRunEthereum and Scaffold-ETH
         demonstrations, workshops, and hackathons! Members can make withdraws from their stream after meaningfully
-        contibuting to the community.
+        contributing to the community.
       </p>
     </div>
   );
