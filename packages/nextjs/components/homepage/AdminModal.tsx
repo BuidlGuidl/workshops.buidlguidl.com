@@ -377,7 +377,7 @@ export const AdminModal = ({
                 <span className="mr-1">
                   <Address address={creatorAddress} hideIcons={true} />
                 </span>{" "}
-                hacker stream{" "}
+                stream{" "}
               </label>
               <label ref={labelRef}>
                 <h1 className="block mt-4 mb-2">Cap:</h1>
