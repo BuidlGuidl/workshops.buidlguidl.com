@@ -9,12 +9,12 @@ type MetaHeaderProps = {
   children?: React.ReactNode;
 };
 
-const baseUrl = "https://buidlguidlpod.vercel.app/"; //Need to manually put in the base url
+const baseUrl = "https://workshops.buidlguidl.com/"; //Need to manually put in the base url
 
 export const MetaHeader = ({
   title = "Workshops",
-  description = "Empowering Ethereum developers through cohort streams; contribute, claim, and showcase at BuidlGuidl.com",
-  image = "bglpbanner.png",
+  description = "We're funding BuidlGuidl members for providing high-impact SpeedRunEthereum and Scaffold-ETH demonstrations, workshops, and hackathons!",
+  image = "Workshops-unfurl.png",
   twitterCard = "summary_large_image",
   children,
 }: MetaHeaderProps) => {
