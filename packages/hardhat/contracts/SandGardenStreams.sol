@@ -3,16 +3,6 @@ pragma solidity >=0.8.0 <0.9.0;
 
 import "@openzeppelin/contracts/access/Ownable.sol";
 
-//  ___     ___              ___     ___    _  _     ___              ___     ___     ___     ___     ___    _  _
-// | _ )   / __|     o O O  / __|   /   \  | \| |   |   \     o O O  / __|   /   \   | _ \   |   \   | __|  | \| |
-// | _ \  | (_ |    o       \__ \   | - |  | .` |   | |) |   o      | (_ |   | - |   |   /   | |) |  | _|   | .` |
-// |___/   \___|   TS__[O]  |___/   |_|_|  |_|\_|   |___/   TS__[O]  \___|   |_|_|   |_|_\   |___/   |___|  |_|\_|
-// _|"""""|_|"""""| {======|_|"""""|_|"""""|_|"""""|_|"""""| {======|_|"""""|_|"""""|_|"""""|_|"""""|_|"""""|_|"""""|
-// "`-0-0-'"`-0-0-'./o--000'"`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-'./o--000'"`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-'
-//
-// BuidlGuidl Mercs
-
-
 contract SandGardenStreams is Ownable {
 
     struct BuilderStreamInfo {
@@ -27,7 +17,15 @@ contract SandGardenStreams is Ownable {
     event UpdateBuilder(address indexed to, uint256 amount);
 
     constructor() { 
-        _transferOwnership(0x34aA3F359A9D614239015126635CE7732c18fDF3);
+
+        emit Withdraw(0x3f22F740d41518f5017b76Eed3a63eb14D2E1B07, 1500000000000000000, "Spoke at EDCON, WaveHack Global Demo Days and Ethereum Quorum Tokyo");
+        emit Withdraw(0x3f22F740d41518f5017b76Eed3a63eb14D2E1B07, 1500000000000000000, "Spoke and organized Brussels Havkathon Prep, spoke at Urbe Campus event and at zero to dapp day");
+        emit Withdraw(0x3f22F740d41518f5017b76Eed3a63eb14D2E1B07, 1500000000000000000, "Organized and led SpeedRunErhereum Day Belgrade and spoke at zero to dapp day Belgrade");
+        emit Withdraw(0x3f22F740d41518f5017b76Eed3a63eb14D2E1B07, 1500000000000000000, "Organized and spoke at Buidl Base Camp Berlin");
+        emit Withdraw(0x3f22F740d41518f5017b76Eed3a63eb14D2E1B07, 1500000000000000000, "FOSS Asia in Vietnam and ETH Prague");
+        emit Withdraw(0x2D143b3Ae28Fa31E7c821D138c58c32A30aA36Ae, 800000000000000000, "EDCON Tokyo 2024");
+
+        _transferOwnership(0x11E91FB4793047a68dFff29158387229eA313ffE);
     }
 
     struct BuilderData {

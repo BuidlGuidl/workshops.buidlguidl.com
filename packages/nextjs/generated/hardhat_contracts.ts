@@ -5,7 +5,7 @@ export default {
       chainId: "1",
       contracts: {
         SandGardenStreams: {
-          address: "0x1c873c172662c3774D089aB967911bC32C04bb08",
+          address: "0x825078aB3d66b91B66D4b907a4742019Ca4Fdf30",
           abi: [
             {
               inputs: [],
@@ -310,7 +310,7 @@ export default {
       chainId: "31337",
       contracts: {
         SandGardenStreams: {
-          address: "0xDc64a140Aa3E981100a9becA4E685f962f0cF6C9",
+          address: "0x5FbDB2315678afecb367f032d93F642f64180aa3",
           abi: [
             {
               inputs: [],
