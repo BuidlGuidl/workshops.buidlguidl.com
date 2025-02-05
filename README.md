@@ -1,3 +1,2 @@
-# 🦸‍♀️ BuidlGuidl Mercs
-
-Funding BuidlGuidl Mercs with oETH streams for quietly having important impact on Ethereum. 
+# 💻 BuidlGuidl Workshops
+Funding BuidlGuidl Workshops members for providing high-impact SpeedRunEthereum and Scaffold-ETH demonstrations, workshops, and hackathons!
