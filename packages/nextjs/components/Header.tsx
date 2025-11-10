@@ -14,12 +14,12 @@ export const Header = () => (
       <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
       <meta
         name="description"
-        content="Funding BuidlGuidl members for providing high-impact SpeedRunEthereum and Scaffold-ETH demonstrations, workshops, and hackathons"
+        content="Funding BuidlGuidl members for providing high-impact Speedrun Ethereum and Scaffold-ETH demonstrations, workshops, and hackathons"
       />
       <meta property="og:title" content="Workshops" />
       <meta
         property="og:description"
-        content="funding BuidlGuidl members for providing high-impact SpeedRunEthereum and Scaffold-ETH demonstrations, workshops, and hackathons"
+        content="funding BuidlGuidl members for providing high-impact Speedrun Ethereum and Scaffold-ETH demonstrations, workshops, and hackathons"
       />
       <meta name="twitter:card" content="summary_large_image" />
       <meta property="og:image" content="https://workshops.buidlguidl.com/thumbnail.png" />

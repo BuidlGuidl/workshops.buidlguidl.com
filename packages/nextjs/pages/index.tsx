@@ -14,7 +14,7 @@ const Home: NextPage = () => {
             <Link href="/members" className="link link-primary">
               Workshops Members
             </Link>{" "}
-            for providing high-impact SpeedRunEthereum and Scaffold-ETH demonstrations, workshops, and hackathons
+            for providing high-impact Speedrun Ethereum and Scaffold-ETH demonstrations, workshops, and hackathons
           </p>
           {/* <p>
             <
